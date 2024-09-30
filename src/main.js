@@ -1,15 +1,14 @@
 import { createApp } from 'vue'
-import Antd from 'ant-design-vue';
-import { Button, message } from 'ant-design-vue';
-import 'ant-design-vue/dist/reset.css';
 import App from './App.vue'
 import router from './route'
+import ElementPlus from 'element-plus'
+
+import '@/assets/css/normalize.css'
+import '@/assets/css/style.scss'
+import 'element-plus/dist/index.css'
 
 const app = createApp(App)
 
 app.use(router)
-app.use(Antd)
-app.use(Button)
+app.use(ElementPlus)
 app.mount('#app')
-
-app.config.globalProperties.$message = message;

@@ -1,10 +1,7 @@
-<script setup>
-</script>
+<script setup></script>
 
 <template lang="pug">
-  .app
-    router-view
+  router-view
 </template>
 
-<style scoped>
-</style>
+<style lang="scss"></style>
